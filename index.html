@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XS — Big Flavour. Zero Sugar. Zero Caffeine.</title>
+  <meta name="description" content="XS energy drink concept: bold fruit flavours, zero sugar, zero caffeine, B vitamins and just 8 calories per can.">
+  <meta name="theme-color" content="#2D2E88">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Fira+Sans+Condensed:ital,wght@0,500;0,600;0,800;1,700;1,800&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ===== Shared SVG library: XS logo + can ===== -->
+<svg width="0" height="0" class="sr-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="metal" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#8f8f98"/>
+      <stop offset=".22" stop-color="#f5f5f8"/>
+      <stop offset=".5" stop-color="#b7b7c0"/>
+      <stop offset=".8" stop-color="#ececf0"/>
+      <stop offset="1" stop-color="#7b7b85"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity=".5"/>
+      <stop offset=".09" stop-color="#000" stop-opacity=".12"/>
+      <stop offset=".19" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".25" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".84" stop-color="#000" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="shoulder" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="xs-grad" gradientUnits="userSpaceOnUse" x1="100" y1="20" x2="80" y2="160">
+      <stop offset="0" stop-color="#F9E809"/>
+      <stop offset=".43" stop-color="#FCE20D"/>
+      <stop offset=".51" stop-color="#F9C424"/>
+      <stop offset=".58" stop-color="#F8B61F"/>
+      <stop offset=".65" stop-color="#F99A2A"/>
+      <stop offset=".72" stop-color="#F57422"/>
+      <stop offset=".8" stop-color="#EC4A24"/>
+      <stop offset=".92" stop-color="#F7201C"/>
+      <stop offset="1" stop-color="#F31828"/>
+    </linearGradient>
+    <pattern id="energy-tex" width="58" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-14)">
+      <text x="0" y="17" style="font:italic 700 15px 'Fira Sans Condensed',sans-serif;fill:#fff;fill-opacity:.07">energy</text>
+    </pattern>
+    <pattern id="drops" width="38" height="43" patternUnits="userSpaceOnUse" patternTransform="rotate(7)">
+      <g fill="#000" fill-opacity=".12"><circle cx="4.35" cy="5.45" r="1.7"/><circle cx="15.35" cy="3.45" r="1"/><circle cx="27.35" cy="8.45" r="2.2"/><circle cx="19.35" cy="13.45" r="1.3"/><circle cx="8.35" cy="17.45" r="1.1"/><circle cx="33.35" cy="19.45" r="1.5"/><circle cx="3.35" cy="27.45" r="1.4"/><circle cx="14.35" cy="25.45" r="0.8"/><circle cx="24.35" cy="29.45" r="1.9"/><circle cx="35.35" cy="33.45" r="1"/><circle cx="10.35" cy="37.45" r="1.6"/><circle cx="29.35" cy="40.45" r="0.9"/><circle cx="20.35" cy="39.45" r="1.2"/><circle cx="6.35" cy="9.45" r="0.7"/><circle cx="31.35" cy="26.45" r="0.7"/></g>
+      <g fill="#fff" fill-opacity=".2"><circle cx="4" cy="5" r="1.56"/><circle cx="15" cy="3" r="0.92"/><circle cx="27" cy="8" r="2.02"/><circle cx="19" cy="13" r="1.20"/><circle cx="8" cy="17" r="1.01"/><circle cx="33" cy="19" r="1.38"/><circle cx="3" cy="27" r="1.29"/><circle cx="14" cy="25" r="0.74"/><circle cx="24" cy="29" r="1.75"/><circle cx="35" cy="33" r="0.92"/><circle cx="10" cy="37" r="1.47"/><circle cx="29" cy="40" r="0.83"/><circle cx="20" cy="39" r="1.10"/><circle cx="6" cy="9" r="0.64"/><circle cx="31" cy="26" r="0.64"/></g>
+      <g fill="#fff" fill-opacity=".7"><circle cx="3.41" cy="4.41" r="0.51"/><circle cx="26.23" cy="7.23" r="0.66"/><circle cx="18.55" cy="12.54" r="0.39"/><circle cx="7.62" cy="16.61" r="0.33"/><circle cx="32.48" cy="18.48" r="0.45"/><circle cx="2.51" cy="26.51" r="0.42"/><circle cx="23.34" cy="28.34" r="0.57"/><circle cx="9.44" cy="36.44" r="0.48"/><circle cx="19.58" cy="38.58" r="0.36"/></g>
+    </pattern>
+    <clipPath id="can-clip">
+      <path d="M16 15 Q16 8 24 8 H96 Q104 8 104 15 L110 28 V268 Q110 281 97 282 H23 Q10 281 10 268 V28 Z"/>
+    </clipPath>
+
+    <!-- XS logo: silhouette traced from inspirations/XS1.png -->
+    <path id="xs-logo-shape" fill-rule="evenodd" d="M107.8 21.6L106.8 22.2L105.9 22.6L105.2 22.9L104.6 23.1L104.2 23.2L103.8 23.3L103.4 23.5L103.0 23.7L102.7 24.0L102.3 24.2L101.9 24.3L101.4 24.3L100.8 24.2L100.2 24.3L99.5 24.6L98.8 25.1L98.0 25.9L97.4 26.5L97.0 27.0L96.9 27.5L97.1 27.8L97.1 28.2L97.2 28.6L97.2 29.2L97.1 29.8L97.0 30.4L96.8 30.9L96.6 31.3L96.4 31.7L96.1 32.2L95.9 32.8L95.7 33.5L95.5 34.3L95.3 35.0L95.0 35.5L94.7 36.0L94.3 36.3L94.0 36.7L93.8 37.1L93.8 37.7L93.8 38.3L93.6 39.1L93.4 40.1L93.0 41.3L92.5 42.7L92.0 43.8L91.5 44.8L90.9 45.5L90.3 46.0L89.9 46.6L89.6 47.4L89.4 48.3L89.3 49.4L89.2 50.4L89.0 51.2L88.7 51.9L88.3 52.6L87.9 53.5L87.5 54.7L87.0 56.1L86.5 57.9L86.0 59.4L85.6 60.6L85.2 61.5L84.8 62.2L84.5 62.9L84.3 63.7L84.1 64.5L83.9 65.3L83.8 66.1L83.5 66.9L83.2 67.6L82.8 68.4L82.5 69.1L82.3 69.7L82.2 70.3L82.1 70.9L81.9 71.7L81.5 72.6L81.1 73.7L80.4 75.0L80.0 76.2L79.7 77.1L79.5 77.9L79.5 78.6L79.4 79.1L79.3 79.6L79.0 80.0L78.7 80.3L78.4 80.7L78.2 81.2L78.0 81.8L77.8 82.5L77.5 83.1L77.3 83.8L76.9 84.3L76.6 84.9L76.2 85.5L76.0 86.2L75.7 86.9L75.5 87.6L75.1 88.9L74.3 90.6L73.3 92.9L72.0 95.6L70.9 98.0L70.1 99.9L69.6 101.3L69.4 102.4L69.1 103.4L68.7 104.2L68.3 104.9L67.8 105.6L67.3 106.3L66.9 107.0L66.5 107.9L66.2 108.8L65.9 109.7L65.5 110.5L65.1 111.3L64.7 112.0L64.3 112.6L64.1 113.1L63.9 113.6L63.8 113.9L63.9 114.3L64.1 114.6L64.4 115.0L64.8 115.3L65.2 115.6L65.4 115.9L65.6 116.1L65.7 116.4L65.5 116.8L65.3 117.3L64.8 118.1L64.2 118.9L63.6 119.6L63.0 120.1L62.5 120.3L62.0 120.4L61.5 120.4L61.0 120.2L60.6 119.9L60.2 119.6L59.7 119.0L59.2 118.2L58.7 117.2L58.1 116.0L57.3 114.6L56.3 113.0L55.1 111.3L53.7 109.3L52.3 107.3L51.2 105.3L50.1 103.4L49.2 101.6L48.4 100.1L47.8 99.0L47.5 98.4L47.3 98.1L47.1 97.9L46.8 97.8L46.5 97.7L46.2 97.6L46.0 97.5L45.9 97.2L45.8 96.9L45.9 96.6L45.9 96.2L45.7 95.9L45.4 95.5L45.1 95.2L44.6 95.0L44.1 95.0L43.6 95.0L42.9 95.2L42.4 95.3L41.9 95.4L41.5 95.3L41.2 95.2L41.0 95.0L40.8 94.8L40.7 94.5L40.6 94.2L40.6 93.9L40.7 93.6L40.9 93.4L41.1 93.1L41.3 92.7L41.5 92.1L41.6 91.3L41.7 90.4L41.6 89.6L41.4 89.0L41.0 88.5L40.5 88.2L40.1 87.9L39.8 87.5L39.6 87.0L39.4 86.5L39.2 86.0L38.9 85.6L38.5 85.2L38.0 84.8L37.6 84.4L37.3 83.9L37.2 83.4L37.1 82.8L36.9 82.3L36.6 81.8L36.2 81.3L35.6 80.8L35.2 80.3L34.9 79.8L34.8 79.3L34.9 78.9L34.9 78.5L34.8 78.2L34.7 77.9L34.5 77.6L34.3 77.4L33.9 77.1L33.4 76.9L32.8 76.6L32.4 76.3L32.0 76.0L31.7 75.7L31.5 75.3L31.3 75.1L30.9 75.0L30.4 75.0L29.8 75.2L29.3 75.3L28.9 75.3L28.5 75.2L28.2 75.0L28.0 74.8L27.8 74.6L27.7 74.4L27.6 74.1L27.4 73.9L27.1 73.8L26.7 73.7L26.1 73.6L25.2 73.9L24.1 74.5L22.6 75.5L20.9 76.8L19.4 77.8L18.3 78.5L17.4 78.9L16.8 79.1L16.4 79.3L16.1 79.8L16.0 80.4L16.0 81.1L16.2 82.0L16.6 83.1L17.2 84.4L18.0 85.8L18.7 87.1L19.2 88.2L19.5 89.0L19.7 89.7L20.1 90.8L20.8 92.3L21.7 94.2L22.8 96.5L23.8 98.5L24.5 100.0L25.2 101.2L25.6 102.0L26.0 102.7L26.4 103.2L26.7 103.6L27.0 103.9L27.3 104.2L27.5 104.6L27.7 105.1L27.8 105.7L28.0 106.2L28.3 106.8L28.7 107.3L29.1 107.9L29.7 108.9L30.4 110.2L31.3 111.9L32.4 114.1L33.4 115.9L34.3 117.4L35.1 118.6L35.9 119.4L36.5 120.3L36.9 121.0L37.2 121.7L37.3 122.3L37.5 122.9L37.8 123.4L38.1 123.9L38.4 124.3L38.8 124.8L39.1 125.4L39.4 126.0L39.6 126.7L40.0 127.3L40.4 127.9L40.8 128.4L41.4 128.8L42.0 129.5L42.6 130.5L43.3 131.8L44.0 133.3L44.6 134.6L45.3 135.7L45.9 136.7L46.6 137.5L47.3 138.7L48.1 140.2L49.0 142.0L50.0 144.2L50.7 146.2L51.1 147.8L51.1 149.3L50.9 150.5L50.5 151.4L50.1 152.0L49.6 152.4L48.9 152.6L48.4 152.7L48.0 152.9L47.6 153.1L47.4 153.4L47.2 153.7L47.0 154.1L46.8 154.6L46.7 155.2L46.5 155.7L46.3 156.3L45.9 156.8L45.6 157.4L45.3 158.0L45.0 158.7L44.8 159.4L44.7 160.1L44.5 160.8L44.2 161.5L43.8 162.2L43.3 162.8L42.8 163.5L42.5 164.3L42.2 165.1L42.0 165.9L42.0 166.8L42.0 167.5L42.2 168.2L42.5 168.8L42.7 169.6L42.7 170.4L42.5 171.4L42.2 172.6L41.9 173.6L41.5 174.6L41.1 175.6L40.7 176.4L40.3 177.4L40.1 178.4L39.9 179.4L39.8 180.6L39.7 181.5L39.3 182.4L38.9 183.1L38.3 183.7L37.9 184.3L37.5 185.0L37.2 185.7L37.0 186.5L36.8 187.3L36.5 187.9L36.1 188.4L35.7 188.8L35.3 189.3L35.1 189.9L35.0 190.4L35.0 191.1L34.9 191.7L34.7 192.5L34.4 193.2L34.1 194.0L33.8 194.8L33.6 195.6L33.5 196.4L33.5 197.1L33.3 198.0L33.0 198.9L32.6 199.9L31.9 201.1L31.4 202.4L30.8 203.8L30.3 205.5L29.9 207.3L29.5 208.9L29.0 210.3L28.6 211.5L28.2 212.5L27.8 213.5L27.5 214.6L27.2 215.7L27.0 216.8L26.8 217.9L26.5 219.0L26.1 220.1L25.7 221.2L25.1 223.0L24.4 225.6L23.6 229.0L22.7 233.2L21.9 237.3L21.2 241.4L20.7 245.4L20.3 249.3L20.0 252.3L19.7 254.4L19.5 255.5L19.3 255.7L19.2 256.1L19.2 256.7L19.3 257.5L19.5 258.5L19.6 259.9L19.8 261.7L19.8 263.9L19.9 266.6L20.0 268.5L20.2 269.9L20.5 270.6L20.8 270.7L21.1 270.5L21.5 270.0L21.8 269.3L22.2 268.3L22.6 266.9L22.9 265.3L23.3 263.4L23.7 261.1L24.0 259.3L24.3 258.0L24.6 257.1L24.9 256.7L25.3 255.5L25.8 253.5L26.4 250.8L27.1 247.3L27.8 244.5L28.3 242.6L28.6 241.4L28.9 241.1L29.1 240.6L29.2 240.1L29.3 239.5L29.4 238.8L29.5 238.1L29.8 237.4L30.1 236.6L30.4 235.9L30.7 235.1L31.0 234.3L31.1 233.5L31.2 232.7L31.3 231.9L31.6 231.0L31.9 230.2L32.3 229.3L32.9 228.0L33.5 226.2L34.2 224.0L35.0 221.3L35.8 219.0L36.4 217.2L37.0 215.8L37.5 214.9L37.9 214.1L38.1 213.4L38.3 212.8L38.3 212.4L38.3 212.0L38.5 211.5L38.8 211.0L39.2 210.5L39.6 209.7L40.0 208.7L40.4 207.4L40.8 205.8L41.3 204.4L41.9 203.0L42.5 201.6L43.2 200.4L43.9 199.0L44.6 197.4L45.3 195.7L46.0 193.8L46.6 192.2L47.2 190.9L47.8 189.8L48.3 189.0L48.8 188.0L49.3 186.9L49.8 185.6L50.4 184.2L50.9 183.0L51.3 182.2L51.6 181.7L51.9 181.5L52.2 181.0L52.5 180.3L52.9 179.2L53.3 177.8L53.9 176.5L54.5 175.2L55.2 173.9L56.0 172.6L56.7 171.4L57.2 170.3L57.6 169.2L57.9 168.1L58.3 167.2L58.8 166.5L59.5 165.9L60.3 165.6L60.9 165.3L61.4 165.1L61.8 165.1L62.0 165.2L62.1 165.4L62.2 165.8L62.2 166.5L62.1 167.3L62.3 168.1L62.8 169.0L63.5 169.8L64.5 170.7L65.4 171.6L66.1 172.6L66.8 173.7L67.3 174.8L67.7 175.8L68.2 176.5L68.6 177.1L68.9 177.4L69.5 178.1L70.2 179.2L71.0 180.5L72.0 182.2L72.9 183.6L73.6 184.6L74.2 185.3L74.6 185.7L75.2 186.4L75.8 187.4L76.7 188.8L77.6 190.5L78.6 192.1L79.8 193.8L81.1 195.3L82.4 196.9L83.5 198.1L84.3 198.8L84.8 199.2L85.0 199.1L85.1 198.9L85.3 198.7L85.3 198.3L85.4 197.9L85.3 197.4L85.2 196.8L84.8 196.2L84.4 195.5L83.9 194.8L83.4 194.0L82.9 193.2L82.3 192.3L81.9 191.6L81.7 190.9L81.6 190.4L81.7 190.1L81.8 189.8L82.1 189.6L82.5 189.6L83.0 189.7L83.5 190.0L84.1 190.6L84.7 191.5L85.3 192.7L86.1 194.0L87.0 195.3L88.0 196.8L89.2 198.3L90.2 199.5L90.9 200.6L91.4 201.5L91.6 202.2L91.9 202.9L92.3 203.5L92.7 204.1L93.1 204.7L93.7 205.4L94.5 206.3L95.4 207.3L96.6 208.5L97.5 209.3L98.2 209.9L98.6 210.1L98.9 209.9L99.1 209.7L99.2 209.4L99.3 209.0L99.3 208.5L99.2 208.0L99.1 207.6L99.0 207.3L98.8 207.0L98.7 206.7L98.7 206.4L98.8 206.2L99.0 206.0L99.2 205.9L99.3 205.8L99.5 205.8L99.7 205.9L99.9 206.1L100.1 206.4L100.4 206.8L100.6 207.4L101.0 208.0L101.4 208.7L101.9 209.4L102.6 210.1L103.0 210.8L103.2 211.5L103.1 212.1L102.9 212.7L102.5 213.1L102.1 213.5L101.6 213.7L100.9 213.8L100.3 214.1L99.7 214.7L99.2 215.4L98.6 216.3L97.8 217.2L96.7 218.1L95.4 218.9L93.8 219.6L92.2 220.5L90.5 221.6L88.7 222.9L86.8 224.3L85.3 225.5L84.0 226.3L83.1 226.8L82.4 227.0L81.8 227.1L81.0 227.2L80.3 227.3L79.5 227.3L78.6 227.3L77.8 227.5L76.8 227.7L75.9 228.0L75.1 228.4L74.5 228.8L74.1 229.3L73.9 229.8L73.6 230.2L73.2 230.5L72.8 230.7L72.4 230.8L72.0 231.0L71.5 231.4L71.1 231.8L70.7 232.4L70.2 232.9L69.6 233.4L69.1 233.9L68.4 234.3L68.0 234.8L67.6 235.3L67.4 235.8L67.3 236.3L67.4 236.7L67.6 237.2L68.0 237.6L68.5 237.9L69.1 238.3L69.8 238.5L70.6 238.7L71.4 238.8L72.9 238.9L75.0 238.9L77.6 238.9L80.9 238.8L83.5 238.7L85.6 238.4L87.2 238.0L88.1 237.5L88.9 237.1L89.5 236.9L90.0 236.8L90.3 236.9L90.9 236.8L91.7 236.6L92.8 236.2L94.2 235.6L95.3 235.2L96.2 234.9L96.8 234.8L97.2 234.8L97.6 234.6L98.1 234.4L98.6 234.0L99.2 233.5L99.7 233.1L100.2 232.9L100.7 232.8L101.1 232.8L101.7 232.5L102.3 232.1L103.2 231.5L104.1 230.7L105.2 229.9L106.3 229.2L107.7 228.5L109.1 227.8L110.2 227.2L111.0 226.7L111.4 226.4L111.6 226.1L111.8 225.9L112.1 225.6L112.6 225.3L113.2 225.0L113.7 224.7L114.2 224.6L114.7 224.5L115.1 224.5L115.6 224.3L116.2 223.9L116.8 223.4L117.5 222.6L118.0 222.0L118.4 221.5L118.6 221.0L118.7 220.7L118.8 220.5L119.1 220.2L119.5 220.1L120.0 219.9L120.5 219.7L121.0 219.4L121.5 218.9L122.0 218.3L122.5 217.9L122.9 217.5L123.3 217.3L123.7 217.2L124.0 217.0L124.4 216.7L124.7 216.3L125.0 215.9L125.4 215.5L125.7 215.3L126.1 215.1L126.4 214.9L126.9 214.7L127.3 214.2L127.8 213.6L128.4 212.9L129.0 212.2L129.6 211.6L130.2 211.0L130.8 210.5L131.4 209.9L131.9 209.2L132.4 208.3L132.8 207.4L133.3 206.5L133.9 205.5L134.5 204.6L135.2 203.7L135.8 202.8L136.2 202.1L136.5 201.4L136.7 200.8L136.9 200.4L137.2 200.0L137.5 199.6L137.8 199.4L138.0 199.0L138.2 198.6L138.3 198.1L138.4 197.4L138.5 196.9L138.7 196.3L139.0 195.8L139.3 195.4L139.6 194.8L139.9 194.0L140.2 193.0L140.5 191.8L140.8 190.8L141.1 190.2L141.3 189.7L141.5 189.5L141.5 188.5L141.4 186.5L141.2 183.6L140.8 179.9L140.5 176.9L140.2 174.6L140.0 173.1L139.8 172.4L139.5 171.6L139.0 170.7L138.5 169.8L137.8 168.8L137.0 167.9L136.2 167.2L135.3 166.7L134.3 166.3L133.2 166.0L132.0 165.7L130.7 165.4L129.3 165.1L127.6 165.0L125.7 165.0L123.4 165.2L120.8 165.5L118.6 165.8L116.6 165.9L114.9 165.9L113.6 165.8L112.5 165.8L111.7 165.7L111.2 165.6L111.0 165.4L110.6 165.4L110.0 165.4L109.2 165.4L108.1 165.6L107.2 165.6L106.4 165.5L105.8 165.4L105.3 165.1L104.8 165.0L104.3 164.9L103.8 164.9L103.3 165.1L102.5 165.1L101.6 165.2L100.5 165.2L99.2 165.1L98.0 165.0L97.0 164.7L96.1 164.4L95.4 164.1L94.8 163.7L94.4 163.4L94.2 163.1L94.1 162.9L94.0 162.6L93.7 162.3L93.4 162.0L93.1 161.7L92.7 161.3L92.4 160.7L92.0 160.0L91.7 159.2L91.5 158.4L91.4 157.5L91.3 156.7L91.4 155.8L91.6 154.8L91.8 153.7L92.2 152.4L92.6 151.1L93.2 149.6L93.9 148.1L94.8 146.5L95.9 144.8L96.9 143.3L97.7 142.2L98.4 141.2L99.1 140.5L99.6 139.8L100.0 139.2L100.3 138.5L100.5 137.8L100.8 137.1L101.2 136.4L101.8 135.7L102.5 135.0L103.1 134.5L103.6 134.1L104.0 133.9L104.3 133.8L104.6 133.6L105.0 133.3L105.4 132.7L105.8 132.0L107.0 130.8L108.8 128.9L111.4 126.5L114.6 123.5L117.2 121.3L119.1 119.8L120.3 119.1L120.8 119.2L121.4 119.4L122.1 119.8L123.0 120.4L124.0 121.1L124.7 121.8L125.1 122.5L125.1 123.2L124.9 123.8L124.5 124.4L124.0 125.0L123.4 125.5L122.6 126.0L122.1 126.5L121.7 127.0L121.6 127.4L121.7 127.8L121.8 128.2L122.0 128.3L122.2 128.4L122.5 128.3L122.9 128.2L123.3 127.8L123.8 127.4L124.4 126.8L124.9 126.4L125.4 126.2L125.8 126.1L126.2 126.2L126.5 126.3L126.8 126.4L127.0 126.5L127.2 126.7L127.3 127.1L127.3 127.7L127.2 128.4L127.0 129.3L126.9 130.1L126.9 130.7L127.0 131.0L127.2 131.2L127.4 131.4L127.7 131.5L128.0 131.5L128.3 131.5L128.8 131.3L129.4 130.8L130.2 130.0L131.1 129.0L131.8 128.2L132.4 127.5L132.8 126.9L133.0 126.6L133.1 126.2L133.2 125.7L133.3 125.3L133.3 124.8L133.3 124.3L133.4 124.0L133.6 123.7L133.9 123.5L134.1 123.0L134.2 122.2L134.3 121.0L134.3 119.5L134.1 118.3L133.9 117.3L133.6 116.5L133.2 116.0L132.8 115.5L132.7 115.1L132.6 114.8L132.7 114.5L132.5 114.0L132.1 113.5L131.4 112.8L130.6 112.0L129.8 111.2L129.2 110.5L128.8 109.9L128.5 109.3L128.0 108.9L127.5 108.5L126.8 108.2L126.0 108.0L124.7 108.0L123.0 108.0L120.9 108.1L118.3 108.4L116.3 108.7L114.7 109.1L113.6 109.5L112.9 110.0L112.2 110.5L111.2 111.1L110.1 111.7L108.9 112.3L107.8 112.9L107.0 113.5L106.3 114.0L105.9 114.5L105.4 114.9L104.9 115.3L104.4 115.5L103.8 115.7L103.3 116.0L102.9 116.3L102.4 116.7L102.1 117.1L101.7 117.4L101.4 117.7L101.0 117.8L100.7 117.9L100.3 118.1L99.9 118.5L99.4 119.1L98.8 119.9L98.3 120.5L97.9 120.9L97.4 121.2L97.1 121.3L96.6 121.6L96.0 122.0L95.4 122.5L94.6 123.2L94.0 123.8L93.5 124.4L93.2 124.8L93.0 125.2L92.6 125.6L92.0 126.2L91.1 126.8L89.9 127.5L89.0 128.1L88.4 128.7L88.0 129.3L87.8 129.8L87.4 130.3L86.9 130.8L86.2 131.4L85.3 132.1L84.6 132.6L84.2 133.0L83.9 133.4L83.8 133.6L83.7 133.9L83.5 134.1L83.2 134.4L82.8 134.6L82.4 135.0L81.9 135.5L81.4 136.2L80.8 137.0L80.3 137.8L79.7 138.4L79.2 138.9L78.6 139.3L78.0 139.9L77.5 140.5L77.0 141.2L76.5 142.0L76.0 142.6L75.5 143.0L74.9 143.3L74.3 143.3L73.8 143.1L73.4 142.8L73.0 142.3L72.7 141.7L72.5 140.8L72.5 139.7L72.5 138.3L72.7 136.7L73.0 135.3L73.2 134.3L73.6 133.5L73.9 133.0L74.3 132.3L74.7 131.5L75.1 130.5L75.4 129.3L75.8 128.2L76.2 127.2L76.7 126.4L77.1 125.6L77.4 125.0L77.6 124.5L77.8 124.0L77.8 123.7L77.9 123.3L78.2 122.7L78.6 122.0L79.2 121.2L79.6 120.4L80.0 119.6L80.2 118.9L80.3 118.1L80.6 117.2L81.0 116.1L81.5 114.8L82.2 113.4L82.7 112.2L83.0 111.3L83.1 110.6L82.9 110.2L82.9 109.8L83.0 109.4L83.2 109.1L83.5 108.9L83.8 108.6L84.0 108.2L84.2 107.8L84.3 107.3L84.6 106.5L85.2 105.5L85.9 104.2L86.8 102.6L87.6 101.3L88.1 100.2L88.4 99.3L88.6 98.7L88.9 97.6L89.6 96.0L90.4 94.0L91.6 91.5L92.5 89.3L93.2 87.4L93.6 85.8L93.9 84.5L94.2 83.3L94.7 82.2L95.2 81.2L95.8 80.3L96.5 79.2L97.1 77.9L97.8 76.3L98.5 74.5L99.2 72.8L99.8 71.3L100.5 70.0L101.2 68.8L101.8 67.7L102.1 66.8L102.3 66.0L102.4 65.3L102.6 64.4L103.0 63.3L103.4 61.9L104.1 60.3L104.5 59.1L104.8 58.2L104.8 57.5L104.7 57.2L104.7 56.9L104.8 56.7L105.0 56.5L105.3 56.3L105.6 56.0L105.9 55.6L106.2 55.1L106.5 54.4L106.9 53.2L107.4 51.4L108.0 49.0L108.7 46.0L109.5 43.2L110.2 40.6L111.1 38.1L111.9 35.9L112.7 33.8L113.3 31.8L113.8 30.0L114.2 28.3L114.5 26.8L114.7 25.7L114.8 24.7L114.8 24.0L114.7 23.4L114.5 22.8L114.2 22.3L113.8 21.8L113.3 21.4L112.6 21.1L111.8 20.9L110.8 20.8L109.8 20.9L108.8 21.2ZM104.6 172.9L105.2 173.1L105.9 173.3L106.9 173.3L108.2 173.3L109.6 173.2L110.8 173.1L111.9 173.2L112.7 173.3L113.3 173.5L113.9 173.6L114.3 173.6L114.7 173.5L115.0 173.3L115.4 173.1L115.8 173.0L116.3 173.0L116.8 173.0L117.3 173.1L117.8 173.2L118.4 173.4L119.1 173.6L119.7 173.8L120.2 173.9L120.8 174.0L121.3 174.0L121.9 174.1L122.7 174.3L123.6 174.6L124.7 174.9L125.6 175.4L126.5 176.1L127.4 176.8L128.1 177.7L128.7 178.7L129.0 179.7L129.2 180.9L129.1 182.1L128.9 183.4L128.5 184.8L128.1 186.2L127.4 187.6L126.9 188.8L126.3 189.9L125.8 190.7L125.4 191.3L125.1 191.9L124.8 192.4L124.7 192.8L124.6 193.2L124.4 193.6L124.1 193.9L123.8 194.3L123.3 194.7L122.7 195.2L122.1 195.9L121.5 196.7L120.8 197.6L120.3 198.4L119.9 199.0L119.7 199.5L119.6 199.8L119.4 200.1L119.2 200.5L118.8 200.9L118.4 201.3L118.0 201.7L117.6 202.0L117.2 202.2L116.8 202.3L116.3 202.6L115.6 203.0L114.8 203.6L113.9 204.4L112.9 205.2L111.8 206.2L110.6 207.2L109.4 208.3L108.3 209.1L107.4 209.5L106.8 209.5L106.3 209.2L105.6 208.3L104.8 206.9L103.8 204.8L102.7 202.2L101.4 199.4L99.8 196.4L98.1 193.3L96.2 190.0L94.7 187.3L93.7 185.3L93.2 184.0L93.1 183.3L92.9 182.4L92.5 181.4L92.1 180.3L91.4 179.0L91.0 177.9L90.8 177.0L90.8 176.4L91.0 176.1L91.7 175.7L92.8 175.5L94.5 175.2L96.7 175.0L98.5 174.8L99.9 174.6L100.9 174.4L101.6 174.1L102.1 173.9L102.6 173.6L103.0 173.3L103.3 173.0L103.7 172.8L104.1 172.8Z"/>
+    <symbol id="xs-logo" viewBox="12 17 133 257">
+      <use href="#xs-logo-shape" transform="translate(1.6 1.8)" fill="#4A0418" fill-opacity=".5"/>
+      <use href="#xs-logo-shape" fill="url(#xs-grad)" stroke="#FFE1E6" stroke-opacity=".8" stroke-width=".9" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Can: colours come from --can / --ed / --txt on the parent <svg> -->
+    <symbol id="can-base" viewBox="0 0 120 290">
+      <rect x="18" y="1" width="84" height="12" rx="5" fill="url(#metal)"/>
+      <rect x="14" y="276" width="92" height="12" rx="5" fill="url(#metal)"/>
+      <path d="M16 15 Q16 8 24 8 H96 Q104 8 104 15 L110 28 V268 Q110 281 97 282 H23 Q10 281 10 268 V28 Z" style="fill:var(--can)"/>
+      <g clip-path="url(#can-clip)">
+        <rect width="120" height="290" fill="url(#energy-tex)"/>
+        <rect x="0" y="8" width="120" height="24" fill="url(#shoulder)" opacity=".55"/>
+      </g>
+      <g transform="translate(34 46) rotate(-9)">
+        <rect x="-24" y="-14.5" width="48" height="29" rx="7" fill="#227C12" stroke="#F9F009" stroke-width="1.3"/>
+        <g text-anchor="middle" style="font:10px 'Luckiest Guy',Impact,sans-serif;fill:#F9F009;stroke:#0F3306;stroke-width:1;paint-order:stroke">
+          <text y="-1.4">0 CARBS</text><text y="10">0 SUGAR</text>
+        </g>
+      </g>
+      <use href="#xs-logo" x="8" y="36" width="104" height="201"/>
+      <g text-anchor="middle" style="font-family:'Fira Sans Condensed','Arial Narrow',sans-serif;fill:var(--txt)">
+        <text x="97" y="84" style="font-size:5.4px">Only</text>
+        <text x="97" y="98" style="font-size:15px;font-weight:800">8</text>
+        <text x="97" y="105" style="font-size:5.4px">Calories</text>
+      </g>
+      <g transform="translate(10 124) rotate(-7)" style="font-family:'Fira Sans Condensed','Arial Narrow',sans-serif;font-weight:800;fill:#fff;stroke:#3A0A0A;stroke-width:.9;paint-order:stroke">
+        <text style="font-size:5.8px">ALL OF THE</text>
+        <text y="9.4" style="font-size:9px">ENERGY!</text>
+        <text y="16" style="font-size:5.8px">NONE OF THE</text>
+        <text y="25.4" style="font-size:9px">SUGAR!</text>
+      </g>
+      <text x="66" y="248" text-anchor="middle" style="font:700 15px 'Trebuchet MS','Fira Sans',sans-serif;fill:var(--ed);stroke:var(--ed-line,#6B1206);stroke-width:.7;paint-order:stroke">Energy Drink</text>
+      <text x="60" y="274" text-anchor="middle" style="font:600 5.6px 'Fira Sans Condensed','Arial Narrow',sans-serif;fill:var(--txt)">200 ml (6.8 fl oz)</text>
+    </symbol>
+    <symbol id="can-gloss" viewBox="0 0 120 290">
+      <g clip-path="url(#can-clip)">
+        <rect width="120" height="290" fill="url(#drops)"/>
+      </g>
+      <path d="M16 15 Q16 8 24 8 H96 Q104 8 104 15 L110 28 V268 Q110 281 97 282 H23 Q10 281 10 268 V28 Z" fill="url(#gloss)"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== A. Navigation ===== -->
+<header class="site-header" id="top">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="XS home">
+      <svg class="brand__logo" viewBox="12 17 133 257" aria-hidden="true"><use href="#xs-logo"/></svg>
+      <span class="brand__text" aria-hidden="true">Energy</span>
+    </a>
+    <ul class="nav__links" id="nav-menu">
+      <li><a href="#flavours">Flavours</a></li>
+      <li><a href="#inside">What’s Inside</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#find">Find XS</a></li>
+      <li class="nav__menu-cta"><a class="btn btn--orange" href="#flavours">Explore flavours</a></li>
+    </ul>
+    <a class="btn btn--orange nav__cta" href="#flavours">Explore flavours</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav__toggle-bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== B. Hero ===== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__inner container">
+      <div class="hero__copy">
+        <p class="eyebrow">Sugar-free · Non-caffeinated · B vitamins</p>
+        <h1 class="hero__title" id="hero-title">
+          <span>Big flavour.</span>
+          <span class="t-orange">Zero sugar.</span>
+          <span>Zero caffeine.</span>
+        </h1>
+        <p class="hero__lede">Meet XS — vibrant fruit flavours, essential B vitamins, and a refreshing alternative to conventional caffeinated energy drinks.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--orange btn--lg" href="#flavours">Discover the flavours</a>
+          <a class="btn btn--ghost btn--lg" href="#inside">What’s inside?</a>
+        </div>
+        <ul class="hero__meta" aria-label="Key facts">
+          <li><b>0</b> sugar</li>
+          <li><b>8</b> calories</li>
+          <li><b>8</b> flavours</li>
+        </ul>
+      </div>
+    </div>
+    <figure class="hero__visual">
+      <img src="assets/img/xs-hero-fan.png" width="769" height="598"
+           alt="Five XS energy drink cans fanned out — Citrus Blast, Wild Berry Blast, Electric Lemon Blast, Cranberry-Grape Blast and Tropical Blast — over an orange wave with strawberries, oranges, blueberries and pineapple">
+    </figure>
+  </section>
+
+  <!-- Ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Zero sugar</span><span>✺</span><span>Zero caffeine</span><span>✺</span><span>Only 8 calories</span><span>✺</span><span>B vitamins</span><span>✺</span><span>Big flavour</span><span>✺</span>
+      <span>Zero sugar</span><span>✺</span><span>Zero caffeine</span><span>✺</span><span>Only 8 calories</span><span>✺</span><span>B vitamins</span><span>✺</span><span>Big flavour</span><span>✺</span>
+    </div>
+  </div>
+
+  <!-- ===== C. Benefits ===== -->
+  <section class="benefits" aria-labelledby="benefits-title">
+    <div class="container">
+      <div class="benefits__head">
+        <h2 class="benefits__title" id="benefits-title" data-reveal>All of the flavour. <em>None of the sugar.</em></h2>
+        <p class="benefits__lede" data-reveal>Four promises behind every can. No small print, no trade-offs — just a lighter, brighter take on the energy drink.</p>
+      </div>
+      <ul class="benefits__grid">
+        <li class="benefit" data-reveal>
+          <span class="benefit__fig">0<small>g</small></span>
+          <h3 class="benefit__label">Zero sugar</h3>
+          <p>Sweet, juicy, full-bodied — with no sugar at all.</p>
+        </li>
+        <li class="benefit" data-reveal>
+          <span class="benefit__fig">0<small>mg</small></span>
+          <h3 class="benefit__label">Zero caffeine</h3>
+          <p>A non-caffeinated take on the energy drink. Any time of day.</p>
+        </li>
+        <li class="benefit" data-reveal>
+          <span class="benefit__fig">8<small>kcal</small></span>
+          <h3 class="benefit__label">Just 8 calories</h3>
+          <p>Per 200 ml can. Light enough for every day.</p>
+        </li>
+        <li class="benefit" data-reveal>
+          <span class="benefit__fig">B<small>×4</small></span>
+          <h3 class="benefit__label">B vitamins</h3>
+          <p>B3, B5, B6 and B9 in every can.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== D. Flavour collection ===== -->
+  <section class="flavours" id="flavours" aria-labelledby="flavours-title">
+    <div class="flavours__head container">
+      <div>
+        <p class="eyebrow">The collection — 08 varieties</p>
+        <h2 class="section-title" id="flavours-title">Find your flavour.</h2>
+      </div>
+      <figure class="flavours__lineup">
+        <img src="assets/img/xs-lineup.png" width="685" height="622" loading="lazy"
+             alt="The XS range lined up in a splash of water, with Cranberry-Grape Blast at the front, surrounded by cranberries, an orange slice, ice and a strawberry">
+      </figure>
+    </div>
+
+    <div class="stage" id="flavour-stage" role="tabpanel" aria-labelledby="tab-cgb" tabindex="-1">
+      <div class="stage__word" aria-hidden="true" data-f="word">CRANBERRY</div>
+      <div class="stage__inner container">
+        <div class="stage__info">
+          <p class="stage__code" data-f="code">CGB—01 / Blast series</p>
+          <h3 class="stage__name" data-f="name">Cranberry-Grape Blast</h3>
+          <p class="stage__notes" data-f="notes">Tart | Jammy | Bold</p>
+        </div>
+        <div class="stage__can-wrap">
+          <div class="stage__disc" aria-hidden="true"></div>
+          <svg class="can stage__can f-cgb" data-f="can" viewBox="0 0 120 290" role="img" aria-label="XS Cranberry-Grape Blast can"><use href="#can-base"/><text class="can-name" x="60" y="263" data-f="label">CRANBERRY-GRAPE BLAST</text><use href="#can-gloss"/></svg>
+        </div>
+        <div class="stage__desc">
+          <p data-f="desc">Sharp cranberry folded into deep, jammy grape. A berry hit with real backbone.</p>
+          <dl class="stage__specs">
+            <div><dt>Sugar</dt><dd>0 g</dd></div>
+            <div><dt>Caffeine</dt><dd>0 mg</dd></div>
+            <div><dt>Energy</dt><dd>8 kcal</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="picker" role="tablist" aria-label="Choose a flavour">
+        <button class="picker__btn" type="button" role="tab" id="tab-cgb" aria-controls="flavour-stage" aria-selected="true" data-flavour="cgb">
+          <svg class="can f-cgb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Cranberry-Grape Blast</span>
+        </button>
+        <button class="picker__btn" type="button" role="tab" id="tab-ctb" aria-controls="flavour-stage" aria-selected="false" tabindex="-1" data-flavour="ctb">
+          <svg class="can f-ctb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Citrus Blast</span>
+        </button>
+        <button class="picker__btn" type="button" role="tab" id="tab-trb" aria-controls="flavour-stage" aria-selected="false" tabindex="-1" data-flavour="trb">
+          <svg class="can f-trb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Tropical Blast</span>
+        </button>
+        <button class="picker__btn" type="button" role="tab" id="tab-chb" aria-controls="flavour-stage" aria-selected="false" tabindex="-1" data-flavour="chb">
+          <svg class="can f-chb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Cherry Blast</span>
+        </button>
+        <button class="picker__btn" type="button" role="tab" id="tab-elb" aria-controls="flavour-stage" aria-selected="false" tabindex="-1" data-flavour="elb">
+          <svg class="can f-elb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Electric Lemon Blast</span>
+        </button>
+        <button class="picker__btn" type="button" role="tab" id="tab-grt" aria-controls="flavour-stage" aria-selected="false" tabindex="-1" data-flavour="grt">
+          <svg class="can f-grt" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Green Tea</span>
+        </button>
+        <button class="picker__btn" type="button" role="tab" id="tab-vnt" aria-controls="flavour-stage" aria-selected="false" tabindex="-1" data-flavour="vnt">
+          <svg class="can f-vnt" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Vanilla Tea</span>
+        </button>
+        <button class="picker__btn" type="button" role="tab" id="tab-rlt" aria-controls="flavour-stage" aria-selected="false" tabindex="-1" data-flavour="rlt">
+          <svg class="can f-rlt" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          <span>Raspberry Leaf Tea</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== E. Nutrition & B vitamins ===== -->
+  <section class="inside" id="inside" aria-labelledby="inside-title">
+    <div class="container inside__grid">
+      <div class="inside__intro" data-reveal>
+        <p class="eyebrow eyebrow--dark">What’s inside</p>
+        <h2 class="section-title" id="inside-title">Feel good about what’s inside.</h2>
+        <p class="inside__lede">A short, simple list. Here’s what goes into every <strong>200 ml</strong> can of XS.</p>
+        <ul class="chips">
+          <li>Sugar-free</li>
+          <li>Zero carbohydrates</li>
+          <li>8 kcal / 200 ml</li>
+          <li>Electrolytes</li>
+          <li>B vitamins</li>
+          <li>Non-caffeinated</li>
+        </ul>
+      </div>
+
+      <ol class="vitamins" aria-label="B vitamins per 200 ml can">
+        <li class="vitamin" data-reveal>
+          <span class="vitamin__code">B3</span>
+          <div class="vitamin__body">
+            <h3>Niacin</h3>
+            <p>Plays a role in cellular energy metabolism.</p>
+          </div>
+          <span class="vitamin__rda">100%<small>RDA</small></span>
+        </li>
+        <li class="vitamin" data-reveal>
+          <span class="vitamin__code">B5</span>
+          <div class="vitamin__body">
+            <h3>Pantothenic acid</h3>
+            <p>Helps the body metabolise carbohydrates, proteins and fats.</p>
+          </div>
+          <span class="vitamin__rda">100%<small>RDA</small></span>
+        </li>
+        <li class="vitamin vitamin--hero" data-reveal>
+          <span class="vitamin__code">B6</span>
+          <div class="vitamin__body">
+            <h3>Pyridoxine</h3>
+            <p>Supports normal nervous system function and other important bodily processes.</p>
+          </div>
+          <span class="vitamin__rda">300%<small>RDA</small></span>
+        </li>
+        <li class="vitamin" data-reveal>
+          <span class="vitamin__code">B9</span>
+          <div class="vitamin__body">
+            <h3>Folic acid</h3>
+            <p>Supports normal cell division and the production of new cells.</p>
+          </div>
+          <span class="vitamin__rda">100%<small>RDA</small></span>
+        </li>
+      </ol>
+    </div>
+    <p class="container fineprint">Nutrition values are illustrative specifications from the project brief and have not been independently verified. XS is not intended to diagnose, treat or prevent any condition.</p>
+  </section>
+
+  <!-- ===== F. Our story ===== -->
+  <section class="story" id="story" aria-labelledby="story-title">
+    <div class="container story__grid">
+      <div class="story__copy">
+        <p class="eyebrow">Our story</p>
+        <h2 class="story__title" id="story-title" data-reveal>We didn’t come to make another energy drink.</h2>
+        <p class="story__sub" data-reveal>We came to rethink what one could be.</p>
+        <ol class="story__chapters">
+          <li data-reveal>
+            <span class="story__num">01</span>
+            <h3>Flavour first</h3>
+            <p>Every can starts with fruit — tart cranberry, sun-ripe mango, sharp lemon — tuned until the first sip lands loud.</p>
+          </li>
+          <li data-reveal>
+            <span class="story__num">02</span>
+            <h3>Nothing to hide behind</h3>
+            <p>No sugar and no caffeine means the flavour has to do the talking. So we made it bold.</p>
+          </li>
+          <li data-reveal>
+            <span class="story__num">03</span>
+            <h3>A smarter boost</h3>
+            <p>B vitamins and electrolytes in a light, 8-calorie can. A different kind of energy drink.</p>
+          </li>
+        </ol>
+      </div>
+      <figure class="story__visual">
+        <img src="assets/img/xs-citrus-lemon.png" width="493" height="562" loading="lazy"
+             alt="XS Electric Lemon Blast and Citrus Blast cans tilted over a sweep of orange, with lemons, oranges, a leaf and splashing water">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== G. Lifestyle ===== -->
+  <section class="life" aria-labelledby="life-title">
+    <div class="container">
+      <div class="life__head">
+        <p class="eyebrow eyebrow--dark">Made for real life</p>
+        <h2 class="section-title" id="life-title" data-reveal>From your first plans to your last adventure.</h2>
+        <p class="life__lede">XS is made for grown-up days that ask a lot of you — at a desk, in the gym, on the trail.</p>
+      </div>
+
+      <ul class="life__grid">
+        <li class="life-card life-card--photo" data-reveal>
+          <img class="life-card__photo" src="assets/img/xs-lifestyle.png" width="445" height="624" loading="lazy"
+               alt="A young man laughing as he drinks from a can of XS Citrus Blast outdoors, with orange and lime slices splashing around a can in the foreground">
+          <div class="life-card__body">
+            <h3>Active lifestyles</h3>
+            <p>Bike rides, park sessions, the long way home. Cold, bright and ready when you are.</p>
+          </div>
+        </li>
+        <li class="life-card" data-reveal>
+          <svg class="life-card__art" viewBox="0 0 400 260" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustration: a sunny city skyline with an XS Cranberry-Grape Blast can in the foreground">
+            <rect width="400" height="260" fill="#F38201"/>
+            <circle cx="300" cy="78" r="46" fill="#FBCE21"/>
+            <g fill="#2D2E88">
+              <rect x="20" y="120" width="54" height="140"/><rect x="80" y="90" width="40" height="170"/><rect x="126" y="140" width="60" height="120"/><rect x="192" y="104" width="34" height="156"/><rect x="232" y="150" width="70" height="110"/><rect x="308" y="128" width="40" height="132"/><rect x="354" y="160" width="46" height="100"/>
+            </g>
+            <g fill="#FBCE21" opacity=".85">
+              <rect x="30" y="134" width="8" height="10"/><rect x="50" y="134" width="8" height="10"/><rect x="30" y="156" width="8" height="10"/><rect x="88" y="104" width="8" height="10"/><rect x="104" y="124" width="8" height="10"/><rect x="138" y="154" width="8" height="10"/><rect x="160" y="174" width="8" height="10"/><rect x="200" y="118" width="8" height="10"/><rect x="244" y="164" width="8" height="10"/><rect x="316" y="142" width="8" height="10"/>
+            </g>
+            <rect x="0" y="230" width="400" height="30" fill="#1C1D5E"/>
+            <svg class="f-cgb" x="166" y="92" width="66" height="160" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          </svg>
+          <div class="life-card__body">
+            <h3>Everyday refreshment</h3>
+            <p>Desk, commute, the mid-afternoon lull. Big flavour, without the sugar.</p>
+          </div>
+        </li>
+        <li class="life-card" data-reveal>
+          <svg class="life-card__art" viewBox="0 0 400 260" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustration: a running track and a kettlebell with an XS Electric Lemon Blast can">
+            <rect width="400" height="260" fill="#2D2E88"/>
+            <g fill="none" stroke="#F38201" stroke-width="4" opacity=".85">
+              <path d="M-20 260 C60 120 340 120 420 260"/><path d="M10 260 C80 150 320 150 390 260"/><path d="M40 260 C100 180 300 180 360 260"/>
+            </g>
+            <path d="M92 150 a26 26 0 1 1 52 0" fill="none" stroke="#F38201" stroke-width="12"/>
+            <circle cx="118" cy="186" r="40" fill="#F38201"/>
+            <rect x="96" y="222" width="44" height="8" rx="4" fill="#F38201"/>
+            <svg class="f-elb" x="238" y="78" width="66" height="160" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          </svg>
+          <div class="life-card__body">
+            <h3>Adult fitness</h3>
+            <p>Post-class, post-run, post-PB. Electrolytes, B vitamins and 8 kcal a can.</p>
+          </div>
+        </li>
+        <li class="life-card" data-reveal>
+          <svg class="life-card__art" viewBox="0 0 400 260" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustration: a picnic blanket under trees with a cool box and an XS Tropical Blast can">
+            <rect width="400" height="260" fill="#FFD9A8"/>
+            <g fill="#2D2E88"><circle cx="70" cy="80" r="44"/><circle cx="130" cy="64" r="36"/><circle cx="340" cy="86" r="40"/></g>
+            <g fill="#1C1D5E"><rect x="66" y="110" width="8" height="70"/><rect x="126" y="90" width="8" height="80"/><rect x="336" y="116" width="8" height="70"/></g>
+            <path d="M30 250 L90 170 H370 L330 250Z" fill="#FFF6EA"/>
+            <g fill="#F38201" opacity=".7">
+              <path d="M75 190 H355 L347 206 H63Z"/><path d="M57 222 H340 L332 238 H45Z"/>
+              <path d="M120 170 L80 250 H104 L142 170Z"/><path d="M220 170 L200 250 H224 L242 170Z"/><path d="M320 170 L310 250 H334 L342 170Z"/>
+            </g>
+            <rect x="110" y="168" width="92" height="56" rx="8" fill="#F38201"/>
+            <rect x="104" y="160" width="104" height="16" rx="6" fill="#2D2E88"/>
+            <svg class="f-trb" x="234" y="100" width="56" height="136" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          </svg>
+          <div class="life-card__body">
+            <h3>Family outings</h3>
+            <p>Park days and picnic blankets — one for the grown-ups’ cool box.</p>
+          </div>
+        </li>
+        <li class="life-card" data-reveal>
+          <svg class="life-card__art" viewBox="0 0 400 260" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustration: night-time mountains and a tent with an XS Citrus Blast can">
+            <rect width="400" height="260" fill="#1C1D5E"/>
+            <circle cx="320" cy="60" r="26" fill="#FBCE21"/>
+            <g fill="#FFF6EA"><circle cx="60" cy="40" r="2"/><circle cx="140" cy="70" r="2"/><circle cx="210" cy="30" r="2"/><circle cx="250" cy="90" r="1.5"/><circle cx="30" cy="100" r="1.5"/></g>
+            <path d="M0 220 L90 110 L150 170 L230 80 L330 200 L400 150 V260 H0Z" fill="#2D2E88"/>
+            <path d="M230 80 L258 114 L244 110 L232 124 L218 104 L206 110Z" fill="#FFF6EA"/>
+            <path d="M0 260 V230 C120 210 260 220 400 236 V260Z" fill="#4448B0"/>
+            <path d="M60 236 L110 166 L160 236Z" fill="#F38201"/><path d="M110 166 L100 236 H120Z" fill="#1C1D5E"/>
+            <svg class="f-ctb" x="250" y="102" width="60" height="146" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          </svg>
+          <div class="life-card__body">
+            <h3>Weekend adventures</h3>
+            <p>Trailheads, beaches and road trips. One for the road.</p>
+          </div>
+        </li>
+      </ul>
+      <p class="life__note">XS is designed for adults. Not recommended for children.</p>
+    </div>
+  </section>
+
+  <!-- ===== H. Pack sizes / Find XS ===== -->
+  <section class="packs" id="find" aria-labelledby="packs-title">
+    <div class="container">
+      <div class="packs__head">
+        <p class="eyebrow">Find XS</p>
+        <h2 class="section-title" id="packs-title" data-reveal>Your XS. Your way.</h2>
+      </div>
+
+      <ul class="packs__grid">
+        <li class="pack" data-reveal>
+          <div class="pack__art pack__art--orange">
+            <svg viewBox="0 0 300 260" role="img" aria-label="A single XS Tropical Blast can">
+              <svg class="f-trb" x="100" y="14" width="100" height="242" viewBox="0 0 120 290"><use href="#can-base"/><text class="can-name" x="60" y="263">TROPICAL BLAST</text><use href="#can-gloss"/></svg>
+            </svg>
+          </div>
+          <h3 class="pack__name">Single can</h3>
+          <p class="pack__size">200 ml</p>
+          <p>Grab-and-go. Chilled, light and pocket-sized.</p>
+        </li>
+        <li class="pack" data-reveal>
+          <div class="pack__art pack__art--cream">
+            <svg viewBox="0 0 300 260" role="img" aria-label="A 3-pack of XS cans held together by a blue band">
+              <svg class="f-ctb" x="36" y="28" width="92" height="222" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+              <svg class="f-elb" x="172" y="28" width="92" height="222" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+              <svg class="f-cgb" x="104" y="20" width="92" height="222" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+              <rect x="30" y="182" width="240" height="44" rx="8" fill="#2D2E88"/>
+              <text x="150" y="212" text-anchor="middle" class="pack-label" fill="#F38201">XS · 3-PACK</text>
+            </svg>
+          </div>
+          <h3 class="pack__name">3-pack</h3>
+          <p class="pack__size">3 × 200 ml</p>
+          <p>Three flavours to try. Find the one that’s yours.</p>
+        </li>
+        <li class="pack" data-reveal>
+          <div class="pack__art pack__art--deep">
+            <svg viewBox="0 0 300 260" role="img" aria-label="An orange XS 6-pack carton">
+              <path d="M50 90 L80 58 H262 L232 90Z" fill="#D86F00"/>
+              <path d="M232 90 L262 58 V206 L232 238Z" fill="#B85E00"/>
+              <rect x="50" y="90" width="182" height="148" fill="#F38201"/>
+              <g fill="#B0B3BE"><ellipse cx="102" cy="74" rx="18" ry="6"/><ellipse cx="156" cy="74" rx="18" ry="6"/><ellipse cx="210" cy="74" rx="18" ry="6"/></g>
+              <use href="#xs-logo" x="62" y="98" width="52" height="92"/>
+              <text x="218" y="134" text-anchor="end" class="pack-label" fill="#2D2E88">×6</text>
+              <text x="218" y="178" text-anchor="end" class="pack-small" fill="#2D2E88">6 × 200 ML</text>
+              <text x="218" y="192" text-anchor="end" class="pack-small" fill="#2D2E88">ZERO SUGAR</text>
+              <g><rect x="50" y="210" width="23" height="28" fill="#D3106A"/><rect x="73" y="210" width="23" height="28" fill="#FBCE21"/><rect x="96" y="210" width="23" height="28" fill="#0B6FC2"/><rect x="119" y="210" width="23" height="28" fill="#B3121F"/><rect x="142" y="210" width="23" height="28" fill="#E3EA0A"/><rect x="165" y="210" width="23" height="28" fill="#4FA33A"/><rect x="188" y="210" width="22" height="28" fill="#EFD9A6"/><rect x="210" y="210" width="22" height="28" fill="#7E2A8A"/></g>
+            </svg>
+          </div>
+          <h3 class="pack__name">6-pack</h3>
+          <p class="pack__size">6 × 200 ml</p>
+          <p>Stock the fridge. The working week, sorted.</p>
+        </li>
+        <li class="pack" data-reveal>
+          <div class="pack__art pack__art--orange-soft">
+            <svg viewBox="0 0 300 260" role="img" aria-label="A blue XS 12-pack carton">
+              <path d="M24 100 L58 66 H284 L250 100Z" fill="#3B3DA6"/>
+              <path d="M250 100 L284 66 V204 L250 238Z" fill="#1C1D5E"/>
+              <rect x="24" y="100" width="226" height="138" fill="#2D2E88"/>
+              <text x="40" y="186" class="pack-big" fill="#F38201">12</text>
+              <use href="#xs-logo" x="186" y="108" width="46" height="80"/>
+              <text x="40" y="222" class="pack-small" fill="#FFF6EA">12 × 200 ML · ZERO SUGAR · ZERO CAFFEINE</text>
+            </svg>
+          </div>
+          <h3 class="pack__name">12-pack</h3>
+          <p class="pack__size">12 × 200 ml</p>
+          <p>The big one. For the gym bag, the office or the whole crew.</p>
+        </li>
+      </ul>
+
+      <div class="channels" data-reveal>
+        <h3 class="channels__title">Where XS is headed</h3>
+        <ul class="channels__list">
+          <li>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 10h24l-3 14H7L4 10Zm6 0 4-6m8 6-4-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+            Supermarkets
+          </li>
+          <li>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26C6 12 16 5 27 5c0 12-8 21-21 21Zm0 0 12-12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+            Health stores
+          </li>
+          <li>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 12v8M8 9v14M24 9v14M28 12v8M8 16h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            Gyms
+          </li>
+          <li>
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 10 16 4l12 6v12l-12 6-12-6V10Zm0 0 12 6 12-6M16 16v12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+            Online, direct
+          </li>
+        </ul>
+        <p class="channels__note">This page is a concept — pack formats and channels are illustrative, and nothing here can be ordered.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== I. Final campaign ===== -->
+  <section class="finale" aria-labelledby="finale-title">
+    <div class="container finale__inner">
+      <h2 class="finale__title" id="finale-title" data-reveal>Make room for more flavour.</h2>
+      <p class="finale__sub" data-reveal>Meet the refreshing side of XS.</p>
+      <a class="btn btn--blue btn--lg" href="#flavours">Explore XS</a>
+    </div>
+    <div class="finale__row" role="img" aria-label="All eight XS cans lined up">
+      <svg class="can f-cgb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+      <svg class="can f-ctb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+      <svg class="can f-trb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+      <svg class="can f-chb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+      <svg class="can f-elb" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+      <svg class="can f-grt" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+      <svg class="can f-vnt" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+      <svg class="can f-rlt" viewBox="0 0 120 290" aria-hidden="true"><use href="#can-base"/><use href="#can-gloss"/></svg>
+    </div>
+  </section>
+</main>
+
+<!-- ===== J. Footer ===== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand brand--lg" href="#top" aria-label="Back to top">
+        <svg class="brand__logo" viewBox="12 17 133 257" aria-hidden="true"><use href="#xs-logo"/></svg>
+        <span class="brand__text" aria-hidden="true">Energy</span>
+      </a>
+      <p>Big flavour. Zero sugar. Zero caffeine. Your favourite flavours — a fresher way to fuel your day.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <ul>
+        <li><a href="#flavours">Flavours</a></li>
+        <li><a href="#inside">What’s Inside</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#find">Find XS</a></li>
+        <li><a href="#top">Back to top ↑</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer__base">
+    <p>© <span data-year>2026</span> XS landing page concept.</p>
+    <p>Unofficial design concept. Product photography and packaging come from the project’s reference images and remain the property of their respective owners. Product, nutrition and availability details are illustrative.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
