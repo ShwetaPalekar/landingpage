@@ -68,56 +68,61 @@
       desc: 'Herbal raspberry-leaf notes with a bright, berry finish. Delicate, floral, different.' }
   };
 
-  var stage = document.getElementById('flavour-stage');
-  var tabs = Array.prototype.slice.call(document.querySelectorAll('.picker__btn'));
-  var field = function (key) { return stage.querySelector('[data-f="' + key + '"]'); };
-  var can = field('can');
-  var swapTimer;
+  /* ---------- Flavour selector (landing page only) ---------- */
+  function initFlavourSelector() {
+    var stage = document.getElementById('flavour-stage');
+    if (!stage) return; // the selector only exists on the landing page
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.picker__btn'));
+    var field = function (key) { return stage.querySelector('[data-f="' + key + '"]'); };
+    var can = field('can');
+    var swapTimer;
 
-  function render(id) {
-    var f = FLAVOURS[id];
-    ['word', 'code', 'name', 'notes', 'desc', 'label'].forEach(function (k) {
-      field(k).textContent = f[k];
+    function render(id) {
+      var f = FLAVOURS[id];
+      ['word', 'code', 'name', 'notes', 'desc', 'label'].forEach(function (k) {
+        field(k).textContent = f[k];
+      });
+      Object.keys(FLAVOURS).forEach(function (key) {
+        can.classList.toggle('f-' + key, key === id);
+      });
+      can.setAttribute('aria-label', 'XS ' + f.name + ' can');
+    }
+
+    function select(tab, focus) {
+      var id = tab.dataset.flavour;
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+      });
+      stage.setAttribute('aria-labelledby', tab.id);
+      if (focus) tab.focus();
+
+      clearTimeout(swapTimer);
+      if (reduceMotion) { render(id); return; }
+      can.classList.add('is-swapping');
+      swapTimer = setTimeout(function () {
+        render(id);
+        can.classList.remove('is-swapping');
+      }, 220);
+    }
+
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { select(tab, false); });
+      tab.addEventListener('keydown', function (e) {
+        var next;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = tabs[(i + 1) % tabs.length];
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = tabs[(i - 1 + tabs.length) % tabs.length];
+        else if (e.key === 'Home') next = tabs[0];
+        else if (e.key === 'End') next = tabs[tabs.length - 1];
+        if (next) {
+          e.preventDefault();
+          select(next, true);
+        }
+      });
     });
-    Object.keys(FLAVOURS).forEach(function (key) {
-      can.classList.toggle('f-' + key, key === id);
-    });
-    can.setAttribute('aria-label', 'XS ' + f.name + ' can');
   }
-
-  function select(tab, focus) {
-    var id = tab.dataset.flavour;
-    tabs.forEach(function (t) {
-      var on = t === tab;
-      t.setAttribute('aria-selected', String(on));
-      t.tabIndex = on ? 0 : -1;
-    });
-    stage.setAttribute('aria-labelledby', tab.id);
-    if (focus) tab.focus();
-
-    clearTimeout(swapTimer);
-    if (reduceMotion) { render(id); return; }
-    can.classList.add('is-swapping');
-    swapTimer = setTimeout(function () {
-      render(id);
-      can.classList.remove('is-swapping');
-    }, 220);
-  }
-
-  tabs.forEach(function (tab, i) {
-    tab.addEventListener('click', function () { select(tab, false); });
-    tab.addEventListener('keydown', function (e) {
-      var next;
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = tabs[(i + 1) % tabs.length];
-      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = tabs[(i - 1 + tabs.length) % tabs.length];
-      else if (e.key === 'Home') next = tabs[0];
-      else if (e.key === 'End') next = tabs[tabs.length - 1];
-      if (next) {
-        e.preventDefault();
-        select(next, true);
-      }
-    });
-  });
+  initFlavourSelector();
 
   /* ---------- Reveal on scroll ---------- */
   var reveals = document.querySelectorAll('[data-reveal]');
@@ -134,6 +139,19 @@
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
     reveals.forEach(function (el) { io.observe(el); });
   }
+
+  /* ---------- Demo offers: no checkout, so explain while scrolling to the range ---------- */
+  var toast = document.querySelector('.toast');
+  var toastTimer;
+  document.querySelectorAll('[data-offer]').forEach(function (cta) {
+    cta.addEventListener('click', function () {
+      if (!toast) return;
+      toast.innerHTML = '<b>Demo offer</b> — XS isn’t on sale yet. Here’s the range instead.';
+      toast.hidden = false;
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () { toast.hidden = true; }, 4000);
+    });
+  });
 
   /* ---------- Footer year ---------- */
   var year = document.querySelector('[data-year]');

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>XS — Big Flavour. Zero Sugar. Zero Caffeine.</title>
-  <meta name="description" content="XS energy drink concept: bold fruit flavours, zero sugar, zero caffeine, B vitamins and just 8 calories per can.">
+  <title>XS Energy Drink — Zero Sugar, Zero Crash. Naturally.</title>
+  <meta name="description" content="XS Energy Drink: the natural alternative to traditional energy drinks. Zero sugar, zero caffeine, only 8 calories, B vitamins and electrolytes in delicious natural flavours.">
   <meta name="theme-color" content="#2D2E88">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body id="top">
 
 <!-- ===== Shared SVG library: XS logo + can ===== -->
 <svg width="0" height="0" class="sr-defs" aria-hidden="true" focusable="false">
@@ -109,18 +109,20 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== A. Navigation ===== -->
-<header class="site-header" id="top">
+<!-- ===== Navigation ===== -->
+<header class="site-header">
   <nav class="nav" aria-label="Primary">
-    <a class="brand" href="#top" aria-label="XS home">
-      <svg class="brand__logo" viewBox="12 17 133 257" aria-hidden="true"><use href="#xs-logo"/></svg>
+    <a class="brand" href="#top" aria-label="XS Energy Drink — home">
+      <img class="brand__logo" src="assets/xs-logo.svg" alt="" width="133" height="257">
       <span class="brand__text" aria-hidden="true">Energy</span>
     </a>
     <ul class="nav__links" id="nav-menu">
-      <li><a href="#flavours">Flavours</a></li>
-      <li><a href="#inside">What’s Inside</a></li>
-      <li><a href="#story">Our Story</a></li>
-      <li><a href="#find">Find XS</a></li>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#nutrition">Nutrition</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#offers">Offers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
       <li class="nav__menu-cta"><a class="btn btn--orange" href="#flavours">Explore flavours</a></li>
     </ul>
     <a class="btn btn--orange nav__cta" href="#flavours">Explore flavours</a>
@@ -133,20 +135,20 @@
 
 <main id="main">
 
-  <!-- ===== B. Hero ===== -->
+  <!-- ===== Hero ===== -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero__inner container">
       <div class="hero__copy">
-        <p class="eyebrow">Sugar-free · Non-caffeinated · B vitamins</p>
+        <p class="eyebrow">Natural energy · Sugar-free · Non-caffeinated</p>
         <h1 class="hero__title" id="hero-title">
-          <span>Big flavour.</span>
-          <span class="t-orange">Zero sugar.</span>
-          <span>Zero caffeine.</span>
+          <span>Zero sugar,</span>
+          <span class="t-orange">Zero crash.</span>
+          <span>Naturally.</span>
         </h1>
-        <p class="hero__lede">Meet XS — vibrant fruit flavours, essential B vitamins, and a refreshing alternative to conventional caffeinated energy drinks.</p>
+        <p class="hero__lede">XS is the natural alternative to traditional energy drinks — made with natural ingredients, low in calories, and free from the caffeine jitters and the crash that follows.</p>
         <div class="hero__ctas">
           <a class="btn btn--orange btn--lg" href="#flavours">Discover the flavours</a>
-          <a class="btn btn--ghost btn--lg" href="#inside">What’s inside?</a>
+          <a class="btn btn--ghost btn--lg" href="#ingredients">What’s inside?</a>
         </div>
         <ul class="hero__meta" aria-label="Key facts">
           <li><b>0</b> sugar</li>
@@ -164,49 +166,70 @@
   <!-- Ticker -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker__track">
-      <span>Zero sugar</span><span>✺</span><span>Zero caffeine</span><span>✺</span><span>Only 8 calories</span><span>✺</span><span>B vitamins</span><span>✺</span><span>Big flavour</span><span>✺</span>
-      <span>Zero sugar</span><span>✺</span><span>Zero caffeine</span><span>✺</span><span>Only 8 calories</span><span>✺</span><span>B vitamins</span><span>✺</span><span>Big flavour</span><span>✺</span>
+      <span>Zero sugar</span><span>✺</span><span>Zero crash</span><span>✺</span><span>Only 8 calories</span><span>✺</span><span>Natural flavours</span><span>✺</span><span>B vitamins</span><span>✺</span>
+      <span>Zero sugar</span><span>✺</span><span>Zero crash</span><span>✺</span><span>Only 8 calories</span><span>✺</span><span>Natural flavours</span><span>✺</span><span>B vitamins</span><span>✺</span>
     </div>
   </div>
 
-  <!-- ===== C. Benefits ===== -->
-  <section class="benefits" aria-labelledby="benefits-title">
+  <!-- ===== Product features ===== -->
+  <section class="features" id="features" aria-labelledby="features-title">
     <div class="container">
-      <div class="benefits__head">
-        <h2 class="benefits__title" id="benefits-title" data-reveal>All of the flavour. <em>None of the sugar.</em></h2>
-        <p class="benefits__lede" data-reveal>Four promises behind every can. No small print, no trade-offs — just a lighter, brighter take on the energy drink.</p>
+      <div class="features__head">
+        <div>
+          <p class="eyebrow eyebrow--dark">Product features</p>
+          <h2 class="section-title" id="features-title" data-reveal>Everything you want. <em>Nothing you don’t.</em></h2>
+        </div>
+        <p class="features__lede" data-reveal>Light, bright and made for every day. Six reasons XS earns a place in your fridge.</p>
       </div>
-      <ul class="benefits__grid">
-        <li class="benefit" data-reveal>
-          <span class="benefit__fig">0<small>g</small></span>
-          <h3 class="benefit__label">Zero sugar</h3>
-          <p>Sweet, juicy, full-bodied — with no sugar at all.</p>
+      <ul class="feature-grid">
+        <li class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="10" y="14" width="22" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M17 14l6-6h20v20l-6 6M32 14l11-6M32 36V14" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M6 42 42 6" stroke="#F38201" stroke-width="3.5" stroke-linecap="round"/></svg></span>
+          <span class="feature__fig">0<small>g</small></span>
+          <h3>Zero sugar</h3>
+          <p>Sweet, juicy flavour with no sugar at all.</p>
         </li>
-        <li class="benefit" data-reveal>
-          <span class="benefit__fig">0<small>mg</small></span>
-          <h3 class="benefit__label">Zero caffeine</h3>
-          <p>A non-caffeinated take on the energy drink. Any time of day.</p>
+        <li class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 42V14M24 22c-6 0-9-4-9-9 6 0 9 4 9 9Zm0 0c6 0 9-4 9-9-6 0-9 4-9 9Zm0 10c-6 0-9-4-9-9 6 0 9 4 9 9Zm0 0c6 0 9-4 9-9-6 0-9 4-9 9Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M6 42 42 6" stroke="#F38201" stroke-width="3.5" stroke-linecap="round"/></svg></span>
+          <span class="feature__fig">0<small>g carbs</small></span>
+          <h3>Zero carbohydrates</h3>
+          <p>No carbs to count. Just crisp, clean refreshment.</p>
         </li>
-        <li class="benefit" data-reveal>
-          <span class="benefit__fig">8<small>kcal</small></span>
-          <h3 class="benefit__label">Just 8 calories</h3>
-          <p>Per 200 ml can. Light enough for every day.</p>
+        <li class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5c3 8 12 12 12 23a12 12 0 0 1-24 0c0-6 3-9 5-12 1 4 3 6 5 6 0-6-1-11 2-17Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M24 44a7 7 0 0 1-7-7c0-4 4-6 5-10 3 3 9 6 9 10a7 7 0 0 1-7 7Z" fill="#F38201"/></svg></span>
+          <span class="feature__fig">8<small>kcal</small></span>
+          <h3>Only 8 calories</h3>
+          <p>Per 200 ml can — light enough for any time of day.</p>
         </li>
-        <li class="benefit" data-reveal>
-          <span class="benefit__fig">B<small>×4</small></span>
-          <h3 class="benefit__label">B vitamins</h3>
-          <p>B3, B5, B6 and B9 in every can.</p>
+        <li class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4C18 14 10 21 10 30a14 14 0 0 0 28 0C38 21 30 14 24 4Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="m26 20-6 11h6l-3 9 8-13h-6l3-7Z" fill="#F38201"/></svg></span>
+          <span class="feature__fig feature__fig--word">Plus<small>electrolytes</small></span>
+          <h3>Contains electrolytes</h3>
+          <p>A refreshing companion after a workout or a long, hot day.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 40C8 22 20 8 40 8c1 18-10 30-26 30" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M8 42c8-12 16-19 26-25" fill="none" stroke="#F38201" stroke-width="3.5" stroke-linecap="round"/></svg></span>
+          <span class="feature__fig feature__fig--word">Organic<small>*</small></span>
+          <h3>Organic ingredients<sup>*</sup></h3>
+          <p>Made with organic ingredients for a cleaner, simpler can.</p>
+        </li>
+        <li class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="24" r="12" fill="#F38201"/><path d="M24 12v24M12 24h24M15.5 15.5l17 17M32.5 15.5l-17 17" stroke="#FFF6EA" stroke-width="2"/></svg></span>
+          <span class="feature__fig">8<small>flavours</small></span>
+          <h3>All flavour, no sugar rush</h3>
+          <p>Enjoy your favourite thirst-quencher flavours without the sugar rush.</p>
         </li>
       </ul>
+      <p class="fineprint">*Organic ingredient status is subject to product verification.</p>
     </div>
   </section>
 
-  <!-- ===== D. Flavour collection ===== -->
+  <!-- ===== Flavour collection ===== -->
   <section class="flavours" id="flavours" aria-labelledby="flavours-title">
     <div class="flavours__head container">
       <div>
         <p class="eyebrow">The collection — 08 varieties</p>
         <h2 class="section-title" id="flavours-title">Find your flavour.</h2>
+        <p class="flavours__lede">Eight delicious natural flavours — from tart Cranberry-Grape and zesty Citrus to smooth Vanilla Tea. There’s an XS for every moment.</p>
       </div>
       <figure class="flavours__lineup">
         <img src="assets/img/xs-lineup.png" width="685" height="622" loading="lazy"
@@ -275,62 +298,120 @@
     </div>
   </section>
 
-  <!-- ===== E. Nutrition & B vitamins ===== -->
-  <section class="inside" id="inside" aria-labelledby="inside-title">
+  <!-- ===== Nutrition ===== -->
+  <section class="inside nutrition" id="nutrition" aria-labelledby="nutrition-title">
     <div class="container inside__grid">
       <div class="inside__intro" data-reveal>
-        <p class="eyebrow eyebrow--dark">What’s inside</p>
-        <h2 class="section-title" id="inside-title">Feel good about what’s inside.</h2>
-        <p class="inside__lede">A short, simple list. Here’s what goes into every <strong>200 ml</strong> can of XS.</p>
-        <ul class="chips">
-          <li>Sugar-free</li>
-          <li>Zero carbohydrates</li>
-          <li>8 kcal / 200 ml</li>
-          <li>Electrolytes</li>
-          <li>B vitamins</li>
+        <p class="eyebrow eyebrow--dark">Nutrition</p>
+        <h2 class="section-title" id="nutrition-title">A smarter way to refresh and energise.</h2>
+        <p class="inside__lede">XS is a sugar-free, non-caffeinated formulation with B vitamins, electrolytes and natural flavours — designed as an alternative to traditional caffeinated energy drinks.</p>
+        <p class="inside__lede">B vitamins play a role in normal energy metabolism, while electrolytes contribute to hydration. Together they make XS a refreshing option for anyone who wants a lift without added sugar or caffeine.</p>
+        <ul class="chips" aria-label="Nutritional characteristics">
+          <li>Sugar-free formula</li>
           <li>Non-caffeinated</li>
+          <li>Enriched with B vitamins</li>
+          <li>Contains electrolytes</li>
+          <li>Low in calories</li>
+          <li>Natural flavours</li>
         </ul>
       </div>
 
-      <ol class="vitamins" aria-label="B vitamins per 200 ml can">
-        <li class="vitamin" data-reveal>
-          <span class="vitamin__code">B3</span>
-          <div class="vitamin__body">
-            <h3>Niacin</h3>
-            <p>Plays a role in cellular energy metabolism.</p>
-          </div>
-          <span class="vitamin__rda">100%<small>RDA</small></span>
-        </li>
-        <li class="vitamin" data-reveal>
-          <span class="vitamin__code">B5</span>
-          <div class="vitamin__body">
-            <h3>Pantothenic acid</h3>
-            <p>Helps the body metabolise carbohydrates, proteins and fats.</p>
-          </div>
-          <span class="vitamin__rda">100%<small>RDA</small></span>
-        </li>
-        <li class="vitamin vitamin--hero" data-reveal>
-          <span class="vitamin__code">B6</span>
-          <div class="vitamin__body">
-            <h3>Pyridoxine</h3>
-            <p>Supports normal nervous system function and other important bodily processes.</p>
-          </div>
-          <span class="vitamin__rda">300%<small>RDA</small></span>
-        </li>
-        <li class="vitamin" data-reveal>
-          <span class="vitamin__code">B9</span>
-          <div class="vitamin__body">
-            <h3>Folic acid</h3>
-            <p>Supports normal cell division and the production of new cells.</p>
-          </div>
-          <span class="vitamin__rda">100%<small>RDA</small></span>
-        </li>
-      </ol>
+      <div class="nutrition__panel">
+        <div class="compare" data-reveal>
+          <h3 class="compare__title">How XS compares</h3>
+          <table>
+            <caption class="sr-only">XS compared with a typical energy drink</caption>
+            <thead>
+              <tr><th scope="col"><span class="sr-only">Per can</span></th><th scope="col" class="compare__xs">XS</th><th scope="col">Typical energy drink<sup>†</sup></th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Added sugar</th><td class="compare__xs">None</td><td>Often high</td></tr>
+              <tr><th scope="row">Caffeine</th><td class="compare__xs">None</td><td>Usually high</td></tr>
+              <tr><th scope="row">Calories</th><td class="compare__xs">8 kcal / 200 ml</td><td>Varies — often far higher</td></tr>
+              <tr><th scope="row">B vitamins</th><td class="compare__xs">B3, B5, B6, B9</td><td>Varies</td></tr>
+              <tr><th scope="row">Electrolytes</th><td class="compare__xs">Yes</td><td>Not always</td></tr>
+            </tbody>
+          </table>
+          <p class="compare__note">†General comparison with conventional sugared, caffeinated energy drinks. Varies by brand.</p>
+        </div>
+
+        <h3 class="vitamins__title">B vitamins in every can</h3>
+        <ol class="vitamins" aria-label="B vitamins per 200 ml can">
+          <li class="vitamin" data-reveal>
+            <span class="vitamin__code">B3</span>
+            <div class="vitamin__body"><h4>Niacin</h4><p>Plays a role in cellular energy metabolism.</p></div>
+            <span class="vitamin__rda">100%<small>RDA</small></span>
+          </li>
+          <li class="vitamin" data-reveal>
+            <span class="vitamin__code">B5</span>
+            <div class="vitamin__body"><h4>Pantothenic acid</h4><p>Helps the body metabolise carbohydrates, proteins and fats.</p></div>
+            <span class="vitamin__rda">100%<small>RDA</small></span>
+          </li>
+          <li class="vitamin vitamin--hero" data-reveal>
+            <span class="vitamin__code">B6</span>
+            <div class="vitamin__body"><h4>Pyridoxine</h4><p>Supports normal nervous system function and other important bodily processes.</p></div>
+            <span class="vitamin__rda">300%<small>RDA</small></span>
+          </li>
+          <li class="vitamin" data-reveal>
+            <span class="vitamin__code">B9</span>
+            <div class="vitamin__body"><h4>Folic acid</h4><p>Supports normal cell division and the production of new cells.</p></div>
+            <span class="vitamin__rda">100%<small>RDA</small></span>
+          </li>
+        </ol>
+      </div>
     </div>
-    <p class="container fineprint">Nutrition values are illustrative specifications from the project brief and have not been independently verified. XS is not intended to diagnose, treat or prevent any condition.</p>
+    <p class="container fineprint">Nutrition values and functional statements are illustrative specifications from the project brief. They must be verified against the final formulation and local labelling rules before use. XS is not intended to diagnose, treat or prevent any condition.</p>
   </section>
 
-  <!-- ===== F. Our story ===== -->
+  <!-- ===== Ingredients ===== -->
+  <section class="ingredients" id="ingredients" aria-labelledby="ingredients-title">
+    <div class="container">
+      <div class="features__head">
+        <div>
+          <p class="eyebrow eyebrow--dark">Ingredients</p>
+          <h2 class="section-title" id="ingredients-title" data-reveal>What’s inside XS Natural?</h2>
+        </div>
+        <p class="features__lede" data-reveal>A short list you can actually read. Here’s what goes into a can of XS Natural.</p>
+      </div>
+      <ol class="ingredient-grid">
+        <li class="ingredient ingredient--water" data-reveal>
+          <span class="ingredient__art" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 6C24 19 14 28 14 40a18 18 0 0 0 36 0C50 28 40 19 32 6Z" fill="#4FA3E8"/><path d="M24 40a8 8 0 0 0 8 8" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" opacity=".8"/></svg></span>
+          <h3>Water</h3>
+          <p>The crisp, refreshing base of every can.</p>
+        </li>
+        <li class="ingredient ingredient--stevia" data-reveal>
+          <span class="ingredient__art" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 58V20" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/><path d="M32 30c-12 0-18-8-18-18 12 0 18 8 18 18Z" fill="#4FA33A"/><path d="M32 40c12 0 18-8 18-18-12 0-18 8-18 18Z" fill="#6CC04A"/><path d="M32 50c-9 0-14-6-14-13 9 0 14 6 14 13Z" fill="#4FA33A"/></svg></span>
+          <h3>Stevia</h3>
+          <p>A plant-based sweetener that keeps XS sugar-free.</p>
+        </li>
+        <li class="ingredient ingredient--vitamins" data-reveal>
+          <span class="ingredient__art" aria-hidden="true"><svg viewBox="0 0 64 64"><g transform="rotate(-35 32 32)"><rect x="10" y="22" width="44" height="20" rx="10" fill="#fff" stroke="#2D2E88" stroke-width="3"/><path d="M32 22h12a10 10 0 0 1 0 20H32Z" fill="#F38201"/></g><text x="23" y="39" font-family="Anton, Impact, sans-serif" font-size="14" fill="#2D2E88" transform="rotate(-35 32 32)">B</text></svg></span>
+          <h3>B vitamins</h3>
+          <p>Niacin, pantothenic acid, pyridoxine and folic acid.</p>
+          <ul class="ingredient__tags" aria-label="B vitamins"><li>B3</li><li>B5</li><li>B6</li><li>B9</li></ul>
+        </li>
+        <li class="ingredient ingredient--guarana" data-reveal>
+          <span class="ingredient__art" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 8c3 4 3 8 0 12" stroke="#2E7D32" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="32" cy="38" rx="18" ry="20" fill="#D32F2F"/><ellipse cx="32" cy="38" rx="11" ry="13" fill="#FFF6EA"/><circle cx="32" cy="38" r="7" fill="#1C1D5E"/><circle cx="29.5" cy="35.5" r="2" fill="#fff"/></svg></span>
+          <h3>Guarana<sup>†</sup></h3>
+          <p>A climbing plant from the Amazon, prized for its seeds.</p>
+          <p class="ingredient__flag"><span aria-hidden="true">†</span> Needs verification: guarana naturally contains caffeine. Confirm the final formulation is consistent with XS’s non-caffeinated claim.</p>
+        </li>
+        <li class="ingredient ingredient--ginseng" data-reveal>
+          <span class="ingredient__art" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M30 8c-2 6 0 10 2 12" stroke="#4FA33A" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M26 20c6-3 12-1 14 4 3 7-2 12-4 18-1 5 1 10-2 14-1-4-3-6-4-10-2 4-6 6-10 8 2-5 6-9 5-14-1-6-6-14 1-20Z" fill="#E6C48A" stroke="#A8783A" stroke-width="2" stroke-linejoin="round"/><path d="M29 30c3 1 6 1 8 0M28 38c3 1 5 1 7 0" stroke="#A8783A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <h3>Ginseng</h3>
+          <p>A botanical root used in drinks and traditions for centuries.</p>
+        </li>
+        <li class="ingredient ingredient--flavours" data-reveal>
+          <span class="ingredient__art" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="#F38201"/><circle cx="32" cy="32" r="21" fill="#FFF6EA"/><circle cx="32" cy="32" r="18" fill="#FFB347"/><path d="M32 14v36M14 32h36M19.3 19.3l25.4 25.4M44.7 19.3 19.3 44.7" stroke="#FFF6EA" stroke-width="2.4"/><circle cx="32" cy="32" r="3" fill="#FFF6EA"/></svg></span>
+          <h3>Natural flavours</h3>
+          <p>Fruit and tea flavours that vary by variant — from cranberry-grape to vanilla tea.</p>
+        </li>
+      </ol>
+      <p class="fineprint">Ingredient list is a campaign draft based on the project brief. B vitamin levels are as specified in the brief; exact amounts and the full formulation must be confirmed before publication.</p>
+    </div>
+  </section>
+
+  <!-- ===== Our story ===== -->
   <section class="story" id="story" aria-labelledby="story-title">
     <div class="container story__grid">
       <div class="story__copy">
@@ -362,7 +443,7 @@
     </div>
   </section>
 
-  <!-- ===== G. Lifestyle ===== -->
+  <!-- ===== Lifestyle ===== -->
   <section class="life" aria-labelledby="life-title">
     <div class="container">
       <div class="life__head">
@@ -454,7 +535,7 @@
     </div>
   </section>
 
-  <!-- ===== H. Pack sizes / Find XS ===== -->
+  <!-- ===== Pack sizes / Find XS ===== -->
   <section class="packs" id="find" aria-labelledby="packs-title">
     <div class="container">
       <div class="packs__head">
@@ -547,7 +628,73 @@
     </div>
   </section>
 
-  <!-- ===== I. Final campaign ===== -->
+  <!-- ===== Offers ===== -->
+  <section class="offers" id="offers" aria-labelledby="offers-title">
+    <div class="container">
+      <div class="features__head">
+        <div>
+          <p class="eyebrow eyebrow--dark">Limited-time offers</p>
+          <h2 class="section-title" id="offers-title" data-reveal>Fuel up for less.</h2>
+        </div>
+        <p class="features__lede" data-reveal>Five easy ways to try XS Natural. Pick the deal that fits your day.</p>
+      </div>
+
+      <div class="offer-grid">
+        <article class="offer offer--bogo" data-reveal>
+          <div class="offer__body">
+            <p class="offer__tag">Buy 1 · Get 1</p>
+            <h3 class="offer__title"><span class="offer__kicker">Go Natural, Go Big –</span> Buy One, Get One Free!</h3>
+            <p class="offer__text">Embrace natural energy and enjoy a limited-time offer: buy one XS drink, get one free!</p>
+            <a class="btn btn--orange btn--lg" href="#flavours" data-offer>Shop Now</a>
+          </div>
+          <div class="offer__art" aria-hidden="true">
+            <svg class="can f-cgb" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+            <svg class="can f-ctb" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+            <span class="offer__sticker">1+1<small>Free</small></span>
+          </div>
+        </article>
+
+        <article class="offer offer--discount" data-reveal>
+          <p class="offer__fig" aria-hidden="true">20<span>%</span><small>off</small></p>
+          <p class="offer__tag">First order</p>
+          <h3 class="offer__title"><span class="offer__kicker">Unleash Nature’s Power –</span> 20% Off Your First XS Natural!</h3>
+          <p class="offer__text">Unleash the power of natural energy with an exclusive deal: 20% off your first XS Natural purchase.</p>
+          <a class="btn btn--blue" href="#flavours" data-offer>Get 20% Off</a>
+        </article>
+
+        <article class="offer offer--bundle" data-reveal>
+          <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M6 18 24 9l18 9v18l-18 9-18-9V18Zm0 0 18 9 18-9M24 27v18" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="m15 13.5 18 9" stroke="#F38201" stroke-width="3"/></svg></span>
+          <p class="offer__tag">Save 15%</p>
+          <h3 class="offer__title"><span class="offer__kicker">XS Natural Fuel-Up –</span> Bundle and Save 15% Today!</h3>
+          <p class="offer__text">Fuel your energy naturally with a bundle that saves you 15%. Bundle XS Natural Energy and save big.</p>
+          <a class="btn btn--blue" href="#find" data-offer>Explore Bundles</a>
+        </article>
+
+        <article class="offer offer--shipping" data-reveal>
+          <span class="offer__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M4 12h24v20H4zM28 19h9l7 7v6H28z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="13" cy="35" r="4.5" fill="#F38201"/><circle cx="36" cy="35" r="4.5" fill="#F38201"/></svg></span>
+          <p class="offer__tag">Orders over $30</p>
+          <h3 class="offer__title"><span class="offer__kicker">Discover XS Natural Bliss –</span> Free Shipping on Orders Over $30!</h3>
+          <p class="offer__text">Discover the bliss of natural energy and enjoy free shipping on orders over $30.</p>
+          <a class="btn btn--orange" href="#find" data-offer>Shop Now</a>
+        </article>
+
+        <article class="offer offer--sampler" data-reveal>
+          <div class="offer__cans" aria-hidden="true">
+            <svg class="can f-trb" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+            <svg class="can f-elb" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+            <svg class="can f-rlt" viewBox="0 0 120 290"><use href="#can-base"/><use href="#can-gloss"/></svg>
+          </div>
+          <p class="offer__tag">3 flavours · $10</p>
+          <h3 class="offer__title"><span class="offer__kicker">Try XS Natural Sampler Pack –</span> Get 3 Flavours for $10!</h3>
+          <p class="offer__text">Curious about XS Natural? Try our sampler pack featuring three flavours for just $10.</p>
+          <a class="btn btn--blue" href="#find" data-offer>Try the Sampler</a>
+        </article>
+      </div>
+      <p class="fineprint offers__note">Campaign demonstration offers. They can’t be redeemed, and no purchases can be made on this site.</p>
+    </div>
+  </section>
+
+  <!-- ===== Final campaign ===== -->
   <section class="finale" aria-labelledby="finale-title">
     <div class="container finale__inner">
       <h2 class="finale__title" id="finale-title" data-reveal>Make room for more flavour.</h2>
@@ -567,31 +714,48 @@
   </section>
 </main>
 
-<!-- ===== J. Footer ===== -->
+<!-- ===== Footer ===== -->
 <footer class="footer">
   <div class="container footer__grid">
     <div class="footer__brand">
-      <a class="brand brand--lg" href="#top" aria-label="Back to top">
-        <svg class="brand__logo" viewBox="12 17 133 257" aria-hidden="true"><use href="#xs-logo"/></svg>
+      <a class="brand brand--lg" href="#top" aria-label="XS Energy Drink — home">
+        <img class="brand__logo" src="assets/xs-logo.svg" alt="" width="133" height="257">
         <span class="brand__text" aria-hidden="true">Energy</span>
       </a>
-      <p>Big flavour. Zero sugar. Zero caffeine. Your favourite flavours — a fresher way to fuel your day.</p>
+      <p>Zero sugar, zero crash. Naturally. Delicious natural flavours for a fresher way to fuel your day.</p>
+      <ul class="social" aria-label="XS on social media (demonstration links)">
+        <li><a class="social__link" href="https://shwetapalekar.github.io/landingpage/" aria-label="Facebook (demo link to the XS homepage)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1Z" fill="currentColor"/></svg></a></li>
+        <li><a class="social__link" href="https://shwetapalekar.github.io/landingpage/" aria-label="Instagram (demo link to the XS homepage)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a></li>
+        <li><a class="social__link" href="https://shwetapalekar.github.io/landingpage/" aria-label="X (Twitter) (demo link to the XS homepage)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3.5h2.9l-6.4 7.3 7.5 9.7h-5.9l-4.6-6-5.3 6H3.1l6.8-7.8L2.7 3.5h6l4.2 5.5 4.9-5.5Zm-1 15.3h1.6L7.9 5.1H6.2l10.6 13.7Z" fill="currentColor"/></svg></a></li>
+      </ul>
     </div>
-    <nav class="footer__nav" aria-label="Footer">
+    <nav class="footer__nav" aria-label="Footer — explore">
+      <h2 class="footer__heading">Explore</h2>
       <ul>
+        <li><a href="#features">Product features</a></li>
         <li><a href="#flavours">Flavours</a></li>
-        <li><a href="#inside">What’s Inside</a></li>
-        <li><a href="#story">Our Story</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#ingredients">Ingredients</a></li>
+        <li><a href="#offers">Offers</a></li>
+      </ul>
+    </nav>
+    <nav class="footer__nav" aria-label="Footer — XS">
+      <h2 class="footer__heading">XS Energy</h2>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#story">Our story</a></li>
         <li><a href="#find">Find XS</a></li>
-        <li><a href="#top">Back to top ↑</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
   </div>
   <div class="container footer__base">
-    <p>© <span data-year>2026</span> XS landing page concept.</p>
-    <p>Unofficial design concept. Product photography and packaging come from the project’s reference images and remain the property of their respective owners. Product, nutrition and availability details are illustrative.</p>
+    <p>© <span data-year>2026</span> XS Energy Drink concept. All rights reserved.</p>
+    <p>Unofficial design concept. Product photography and packaging come from the project’s reference images and remain the property of their respective owners. Product, nutrition, ingredient and offer details are illustrative. Social icons are demonstration links to this homepage.</p>
   </div>
 </footer>
+
+<div class="toast" role="status" aria-live="polite" hidden></div>
 
 <script src="js/main.js" defer></script>
 </body>
